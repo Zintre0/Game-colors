@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text="El como jugar es bastante simple.. lo primero es seleccionar la dificultad.. por defecto esta seleccionada la de facil (aciertos 30), la de media (aciertos 60) y al dificil es de (aciertos 90).. al hacer click en jugar, se observan 4 colores.. la zona de el centro toma un color que es igual a alguno de los que estan en los margenes, lo que hay que hacer es presionar la zona donde el color del centro es igual al color de los margenes.. por ejemplo si hay un color rojo en el centro, tenemos que tocar el margen que tiene el color rojo ahi se produce un acierto.. cuando los aciertos lleguen al limite de la dificultad... se termina el juego.." />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir" 
+        android:onClick="Salir"/>
+
+</LinearLayout>

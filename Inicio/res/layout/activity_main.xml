@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/frameLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/frameLayout3" >
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:text="" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frameLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/frameLayout4" >
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:text="" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frameLayout1"
+        android:layout_below="@+id/frameLayout4"
+        android:layout_toLeftOf="@+id/frameLayout2"
+        android:layout_toRightOf="@+id/frameLayout5" >
+
+        <Button
+            android:id="@+id/center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PLAY!!" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/top"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </FrameLayout>
+
+</RelativeLayout>

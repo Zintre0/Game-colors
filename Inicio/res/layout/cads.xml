@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <LinearLayout
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight=".01"
+    >
+
+        <TextView
+            android:id="@+id/segundero"
+            android:text="TIMER" 
+            android:layout_width="0px" 
+            android:layout_height="match_parent"
+            android:gravity="center" 
+            android:layout_weight="1" /> 
+
+    </LinearLayout>      
+    
+ <LinearLayout
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight=".20"
+    >
+
+        <Button
+            android:id="@+id/top"
+            android:background="@drawable/butttonshape2"
+            android:layout_width="0px" 
+            android:layout_height="match_parent" 
+            android:layout_weight="1" /> 
+
+    </LinearLayout>  
+ <LinearLayout
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight=".599"
+    >
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="0px"
+            android:background="@drawable/butttonshape_left"
+            android:layout_height="match_parent" 
+            android:layout_weight=".35" /> 
+
+        <Button
+            android:id="@+id/center"
+            android:layout_width="0px" 
+            android:layout_height="match_parent"
+            android:textSize="10px"
+            android:text="CENTER"
+            android:layout_weight=".30" />
+        
+        <Button
+            android:id="@+id/right"
+            android:layout_width="0px" 
+            android:background="@drawable/butttonshape_right"
+            android:layout_height="match_parent"
+            android:layout_weight=".35" />
+
+    </LinearLayout> 
+    
+  <LinearLayout
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:layout_weight=".20"
+    >
+
+        <Button
+            android:id="@+id/bot"
+           	android:background="@drawable/butttonshape_bot"
+            android:layout_width="0px" 
+            android:layout_height="match_parent" 
+            android:layout_weight="1" /> 
+
+    </LinearLayout>  
+
+</LinearLayout>
