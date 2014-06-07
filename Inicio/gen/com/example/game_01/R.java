@@ -30,41 +30,41 @@ public final class R {
         public static final int play=0x7f02000b;
     }
     public static final class id {
-        public static final int Score=0x7f080020;
-        public static final int bot=0x7f080001;
-        public static final int btn_dificil=0x7f08000f;
-        public static final int btn_exit=0x7f080021;
-        public static final int btn_facil=0x7f08000d;
-        public static final int btn_medio=0x7f08000e;
-        public static final int btn_validar_name=0x7f08001c;
-        public static final int center=0x7f080008;
-        public static final int como_jugar=0x7f08001f;
-        public static final int dificil=0x7f080013;
-        public static final int dificultad=0x7f08001e;
-        public static final int edit_nombre=0x7f08001b;
-        public static final int exit=0x7f08000c;
-        public static final int facil=0x7f080011;
-        public static final int frameLayout1=0x7f080000;
-        public static final int frameLayout2=0x7f080005;
-        public static final int frameLayout3=0x7f080003;
-        public static final int frameLayout4=0x7f080006;
-        public static final int frameLayout5=0x7f080002;
-        public static final int info=0x7f08000b;
-        public static final int jugar=0x7f08001d;
-        public static final int left=0x7f080004;
-        public static final int medio=0x7f080012;
-        public static final int menu_settings=0x7f080022;
-        public static final int ptj_1=0x7f080015;
-        public static final int ptj_2=0x7f080017;
-        public static final int ptj_3=0x7f080018;
-        public static final int radioGroup1=0x7f080010;
-        public static final int right=0x7f080007;
-        public static final int segundero=0x7f08000a;
-        public static final int top=0x7f080009;
-        public static final int tv_ingresa_nombre=0x7f08001a;
-        public static final int tv_titulo=0x7f080014;
-        public static final int tv_titulo2=0x7f080016;
-        public static final int tv_tu_ptj=0x7f080019;
+        public static final int Score=0x7f090020;
+        public static final int bot=0x7f090001;
+        public static final int btn_dificil=0x7f09000f;
+        public static final int btn_exit=0x7f090021;
+        public static final int btn_facil=0x7f09000d;
+        public static final int btn_medio=0x7f09000e;
+        public static final int btn_validar_name=0x7f09001c;
+        public static final int center=0x7f090008;
+        public static final int como_jugar=0x7f09001f;
+        public static final int dificil=0x7f090013;
+        public static final int dificultad=0x7f09001e;
+        public static final int edit_nombre=0x7f09001b;
+        public static final int exit=0x7f09000c;
+        public static final int facil=0x7f090011;
+        public static final int frameLayout1=0x7f090000;
+        public static final int frameLayout2=0x7f090005;
+        public static final int frameLayout3=0x7f090003;
+        public static final int frameLayout4=0x7f090006;
+        public static final int frameLayout5=0x7f090002;
+        public static final int info=0x7f09000b;
+        public static final int jugar=0x7f09001d;
+        public static final int left=0x7f090004;
+        public static final int medio=0x7f090012;
+        public static final int menu_settings=0x7f090022;
+        public static final int ptj_1=0x7f090015;
+        public static final int ptj_2=0x7f090017;
+        public static final int ptj_3=0x7f090018;
+        public static final int radioGroup1=0x7f090010;
+        public static final int right=0x7f090007;
+        public static final int segundero=0x7f09000a;
+        public static final int top=0x7f090009;
+        public static final int tv_ingresa_nombre=0x7f09001a;
+        public static final int tv_titulo=0x7f090014;
+        public static final int tv_titulo2=0x7f090016;
+        public static final int tv_tu_ptj=0x7f090019;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -80,12 +80,18 @@ public final class R {
         public static final int inicio2=0x7f03000a;
     }
     public static final class menu {
-        public static final int activity_main=0x7f070000;
+        public static final int activity_main=0x7f080000;
+    }
+    public static final class raw {
+        public static final int bubble2=0x7f050000;
+        public static final int housepiano=0x7f050001;
+        public static final int song=0x7f050002;
+        public static final int success=0x7f050003;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
-        public static final int menu_settings=0x7f050002;
+        public static final int app_name=0x7f060000;
+        public static final int hello_world=0x7f060001;
+        public static final int menu_settings=0x7f060002;
     }
     public static final class style {
         /** 
@@ -98,10 +104,10 @@ public final class R {
             backward-compatibility can go here.
         
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }

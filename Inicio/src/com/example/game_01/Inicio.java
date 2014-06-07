@@ -3,6 +3,9 @@ package com.example.game_01;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -15,11 +18,14 @@ public class Inicio extends Activity{
 	Animation animacion_btn,anim2,anim3;
 	Button btn_play,btn_difi,btn_howplay,btn_score;
 	
+	MediaPlayer mPlayer;
+	SoundPool sp;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.inicio);
+		setContentView(R.layout.inicio2);
 		
 		btn_play =(Button) findViewById(R.id.jugar);
 		btn_difi =(Button) findViewById(R.id.dificultad);
@@ -29,6 +35,11 @@ public class Inicio extends Activity{
 		animacion_btn = AnimationUtils.loadAnimation(this,R.anim.amin_type);
 		anim2 = AnimationUtils.loadAnimation(this,R.anim.left);
 		anim3 = AnimationUtils.loadAnimation(this,R.anim.type);
+		
+		sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
+		int soundId = sp.load(this, R.raw.success, 1); // in 2nd param u have to pass your desire ringtone
+		sp.play(soundId, 1, 1, 0, 0, 1);
+		mPlayer = MediaPlayer.create(this, R.raw.success); // in 2nd param u have to pass your desire ringtone
 		
 		//Seccion para animar
 		/*btn_play.startAnimation(animacion_btn);
@@ -40,6 +51,7 @@ public class Inicio extends Activity{
 	}
 	
 	public void Play(View view){
+		this.mPlayer.start();
 		Intent i = new Intent(this,MainActivity.class);
 		i.putExtra("Valor", valor);
 		startActivityForResult(i, 1111);

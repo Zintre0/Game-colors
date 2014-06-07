@@ -1,5 +1,8 @@
 package com.example.game_01;
 
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -22,12 +25,12 @@ public class MainActivity extends Activity implements OnClickListener{
 	Button top,bot,left,right,center;
 	TextView tx1;
 	int alea,aciertos=0,fallos=0,maximo=0,v=10;
-	
+	MediaPlayer mPlayer,mp2;
 	Accion ac = new Accion(this);
 	
 	boolean entrar = false;
-
 	
+	SoundPool sp;
 
 	private long startTime = 0L;
 
@@ -61,6 +64,15 @@ public class MainActivity extends Activity implements OnClickListener{
 		bot.setOnClickListener(this);
 		left.setOnClickListener(this);
 		right.setOnClickListener(this);
+		
+		sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
+		int soundId = sp.load(this, R.raw.song, 1); // in 2nd param u have to pass your desire ringtone
+		sp.play(soundId, 1, 1, 0, 0, 1);
+		mPlayer = MediaPlayer.create(this, R.raw.bubble2); // in 2nd param u have to pass your desire ringtone
+		mp2 = MediaPlayer.create(this, R.raw.housepiano); // in 2nd param u have to pass your desire ringtone
+		
+		 //mPlayer.prepare();
+		
 		
 		startTime = SystemClock.uptimeMillis();
 		customHandler.postDelayed(updateTimerThread, 0);
@@ -114,6 +126,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		switch(v.getId()){
 		case R.id.top:
+			this.mPlayer.start();
 			if (1==alea)
 				aciertos++;
 			else
@@ -123,6 +136,7 @@ public class MainActivity extends Activity implements OnClickListener{
 			center.setText("Aciertos: "+aciertos+"  Fallos: "+fallos);
 			break;
 		case R.id.bot:
+			this.mPlayer.start();
 			if (0==alea)
 				aciertos++;
 			else
@@ -132,6 +146,7 @@ public class MainActivity extends Activity implements OnClickListener{
 			center.setText("Aciertos: "+aciertos+"  Fallos: "+fallos);
 			break;
 		case R.id.left:
+			this.mPlayer.start();
 			if (3==alea)
 				aciertos++;
 			else
@@ -141,6 +156,7 @@ public class MainActivity extends Activity implements OnClickListener{
 			center.setText("Aciertos: "+aciertos+"  Fallos: "+fallos);
 			break;
 		case R.id.right:
+			this.mPlayer.start();
 			if (2==alea)
 				aciertos++;
 			else
@@ -162,6 +178,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	}
 	
 	private void endGame(){
+		mp2.start();
 		finish();
 		Intent i = new Intent(this,Ingresa_nombre.class);
 		i.putExtra("aciertos", aciertos);

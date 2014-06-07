@@ -14,6 +14,7 @@
         android:id="@+id/jugar"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="330px"
         android:layout_weight="2"
         android:background="@drawable/play"
         android:gravity="center"
@@ -83,11 +84,11 @@
     <Button
         android:id="@+id/btn_exit"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_weight="1"
-        android:layout_marginLeft="260dp"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="700dp"
         android:background="@drawable/exit"
         android:onClick="Exit" />
     
