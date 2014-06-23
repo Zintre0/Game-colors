@@ -83,14 +83,15 @@
 
     <Button
         android:id="@+id/btn_exit"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="400dp"
-        android:background="@drawable/exit"
-        android:onClick="Exit" />
+        android:layout_marginTop="40dp"
+        android:background="@drawable/butttonshape"
+        android:onClick="Exit"
+        android:text="SALIR"
+        android:textSize="30dp"
+        android:textStyle="bold" />
     
 	</LinearLayout>
     

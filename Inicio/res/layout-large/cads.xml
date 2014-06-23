@@ -15,16 +15,16 @@
             android:layout_width="0px" 
             android:layout_height="match_parent"
             android:gravity="center" 
-            android:layout_weight="1" />
-        
+            android:layout_weight="1" /> 
+         
         <TextView
             android:id="@+id/puntaje"
             android:text="PUNTAJE" 
             android:layout_width="0px" 
             android:layout_height="match_parent"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:gravity="center" 
-            android:layout_weight="1" /> 
+            android:layout_weight="1" />
 
     </LinearLayout>      
     

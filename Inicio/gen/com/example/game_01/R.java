@@ -28,43 +28,44 @@ public final class R {
         public static final int fondo=0x7f020009;
         public static final int ic_launcher=0x7f02000a;
         public static final int play=0x7f02000b;
+        public static final int splash_screen=0x7f02000c;
     }
     public static final class id {
-        public static final int Score=0x7f090020;
+        public static final int Score=0x7f09001e;
         public static final int bot=0x7f090001;
-        public static final int btn_dificil=0x7f09000f;
-        public static final int btn_exit=0x7f090021;
-        public static final int btn_facil=0x7f09000d;
-        public static final int btn_medio=0x7f09000e;
-        public static final int btn_validar_name=0x7f09001c;
+        public static final int btn_exit=0x7f09001f;
+        public static final int btn_validar_name=0x7f09001a;
         public static final int center=0x7f090008;
-        public static final int como_jugar=0x7f09001f;
-        public static final int dificil=0x7f090013;
-        public static final int dificultad=0x7f09001e;
-        public static final int edit_nombre=0x7f09001b;
-        public static final int exit=0x7f09000c;
-        public static final int facil=0x7f090011;
+        public static final int como_jugar=0x7f09001d;
+        public static final int dificil=0x7f090011;
+        public static final int dificultad=0x7f09001c;
+        public static final int edit_nombre=0x7f090019;
+        public static final int exit=0x7f09000d;
+        public static final int facil=0x7f09000f;
         public static final int frameLayout1=0x7f090000;
         public static final int frameLayout2=0x7f090005;
         public static final int frameLayout3=0x7f090003;
         public static final int frameLayout4=0x7f090006;
         public static final int frameLayout5=0x7f090002;
-        public static final int info=0x7f09000b;
-        public static final int jugar=0x7f09001d;
+        public static final int info=0x7f09000c;
+        public static final int jugar=0x7f09001b;
         public static final int left=0x7f090004;
-        public static final int medio=0x7f090012;
+        public static final int medio=0x7f090010;
         public static final int menu_settings=0x7f090022;
-        public static final int ptj_1=0x7f090015;
-        public static final int ptj_2=0x7f090017;
-        public static final int ptj_3=0x7f090018;
-        public static final int radioGroup1=0x7f090010;
+        public static final int progressBar1=0x7f090020;
+        public static final int ptj_1=0x7f090013;
+        public static final int ptj_2=0x7f090015;
+        public static final int ptj_3=0x7f090016;
+        public static final int puntaje=0x7f09000b;
+        public static final int radioGroup1=0x7f09000e;
         public static final int right=0x7f090007;
         public static final int segundero=0x7f09000a;
+        public static final int textView1=0x7f090021;
         public static final int top=0x7f090009;
-        public static final int tv_ingresa_nombre=0x7f09001a;
-        public static final int tv_titulo=0x7f090014;
-        public static final int tv_titulo2=0x7f090016;
-        public static final int tv_tu_ptj=0x7f090019;
+        public static final int tv_ingresa_nombre=0x7f090018;
+        public static final int tv_titulo=0x7f090012;
+        public static final int tv_titulo2=0x7f090014;
+        public static final int tv_tu_ptj=0x7f090017;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -72,12 +73,12 @@ public final class R {
         public static final int cads=0x7f030002;
         public static final int como_jugar=0x7f030003;
         public static final int como_jugar2=0x7f030004;
-        public static final int dificultad=0x7f030005;
-        public static final int dificultad2=0x7f030006;
-        public static final int estadisticas=0x7f030007;
-        public static final int ingresa_name=0x7f030008;
-        public static final int inicio=0x7f030009;
-        public static final int inicio2=0x7f03000a;
+        public static final int dificultad2=0x7f030005;
+        public static final int estadisticas=0x7f030006;
+        public static final int ingresa_name=0x7f030007;
+        public static final int inicio=0x7f030008;
+        public static final int inicio2=0x7f030009;
+        public static final int splash_screen=0x7f03000a;
     }
     public static final class menu {
         public static final int activity_main=0x7f080000;
@@ -90,6 +91,7 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f060000;
+        public static final int como_jugar=0x7f060003;
         public static final int hello_world=0x7f060001;
         public static final int menu_settings=0x7f060002;
     }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
@@ -9,7 +10,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
     
-
+    
     <Button
         android:id="@+id/jugar"
         android:layout_width="fill_parent"
@@ -82,14 +83,15 @@
 
     <Button
         android:id="@+id/btn_exit"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_marginLeft="260dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/exit"
-        android:onClick="Exit" />
+        android:background="@drawable/butttonshape"
+        android:onClick="Exit"
+        android:text="SALIR"
+        android:textSize="30dp"
+        android:textStyle="bold" />
     
 	</LinearLayout>
     
