@@ -62,7 +62,6 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 		int soundId = sp.load(this, R.raw.song, 1); // in 2nd param u have to pass your desire ringtone
-		sp.play(soundId, 1, 1, 0, 0, 1);
 		mPlayer = MediaPlayer.create(this, R.raw.bubble2); // in 2nd param u have to pass your desire ringtone
 		mp2 = MediaPlayer.create(this, R.raw.housepiano); // in 2nd param u have to pass your desire ringtone
 		

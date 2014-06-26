@@ -38,7 +38,7 @@ public class Inicio extends Activity{
 		
 		sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 		int soundId = sp.load(this, R.raw.success, 1); // in 2nd param u have to pass your desire ringtone
-		sp.play(soundId, 1, 1, 0, 0, 1);
+		//sp.play(soundId, 1, 1, 0, 0, 1);
 		mPlayer = MediaPlayer.create(this, R.raw.success); // in 2nd param u have to pass your desire ringtone
 		
 		//Seccion para animar
